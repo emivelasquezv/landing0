@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LANDING 0€ — 5 plazas · Collins</title>
+<meta name="description" content="Creamos la landing de tu negocio por 0 €. Hosting y mantenimiento 19,90 €/mes, sin permanencia. 5 plazas hasta el 5 de octubre de 2026.">
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="variables.css">
+<link rel="stylesheet" href="landing0.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="logo" href="#top" aria-label="Collins">COLL<span class="i">I<span class="dot"></span></span>NS</a>
+    <span class="seats"><i></i><span><b data-seats-left>5</b>/5 plazas</span></span>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Hasta el lunes 5 de octubre</p>
+      <h1>LANDING&nbsp;<span class="zero">0</span>€</h1>
+      <p class="lead">Creamos la web de tu negocio por 0 €. Tú solo pagas 19,90 €/mes de hosting y mantenimiento, sin permanencia.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#solicitud">Pedir mi plaza</a>
+        <a class="link" href="#condiciones">Ver condiciones</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Oferta -->
+  <section class="offer">
+    <div class="wrap offer-grid">
+      <div class="card">
+        <p class="card-k">Qué incluye</p>
+        <ul class="checks">
+          <li>Portada</li>
+          <li>Presentación del negocio</li>
+          <li>Servicios</li>
+          <li>Formulario de contacto</li>
+          <li>Diseño con tu identidad</li>
+          <li>Publicada online</li>
+        </ul>
+      </div>
+      <div class="card price">
+        <div class="price-row"><span class="n n-lime">0 €</span><span class="l">Crearla</span></div>
+        <div class="price-row"><span class="n">19,90 €</span><span class="l">al mes · hosting + mantenimiento + soporte</span></div>
+        <p class="muted">Sin permanencia. No se cobra nada hasta que tu web está publicada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario -->
+  <section class="apply" id="solicitud">
+    <div class="wrap narrow">
+      <h2>Pide tu plaza</h2>
+      <p class="muted">7 preguntas, 2 minutos. Revisamos cada solicitud y te escribimos por DM en menos de 24 h.</p>
+
+      <form class="form" id="form" novalidate>
+        <div class="field">
+          <label for="negocio">1. ¿Cómo se llama tu negocio?</label>
+          <input id="negocio" name="negocio" type="text" autocomplete="organization" required>
+        </div>
+
+        <div class="field">
+          <label for="instagram">2. Tu Instagram</label>
+          <div class="prefix"><span>@</span><input id="instagram" name="instagram" type="text" autocapitalize="off" spellcheck="false" required></div>
+        </div>
+
+        <fieldset class="field">
+          <legend>3. ¿A qué se dedica?</legend>
+          <div class="chips">
+            <label><input type="radio" name="sector" value="belleza" required><span>Belleza y bienestar</span></label>
+            <label><input type="radio" name="sector" value="restauracion"><span>Restauración</span></label>
+            <label><input type="radio" name="sector" value="profesional"><span>Servicios profesionales</span></label>
+            <label><input type="radio" name="sector" value="tienda"><span>Tienda o marca</span></label>
+            <label><input type="radio" name="sector" value="otro"><span>Otro</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>4. ¿Tienes página web ahora?</legend>
+          <div class="chips">
+            <label><input type="radio" name="web_actual" value="no" required><span>No, nada</span></label>
+            <label><input type="radio" name="web_actual" value="linktree"><span>Solo Linktree o similar</span></label>
+            <label><input type="radio" name="web_actual" value="no_me_gusta"><span>Sí, pero no me gusta</span></label>
+            <label><input type="radio" name="web_actual" value="funciona"><span>Sí, y funciona bien</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>5. ¿Qué quieres que consiga tu web? <small>Puedes marcar varias</small></legend>
+          <div class="chips">
+            <label><input type="checkbox" name="objetivo" value="encontrar"><span>Que me encuentren</span></label>
+            <label><input type="checkbox" name="objetivo" value="contactos"><span>Recibir contactos o reservas</span></label>
+            <label><input type="checkbox" name="objetivo" value="profesional"><span>Parecer más profesional</span></label>
+            <label><input type="checkbox" name="objetivo" value="precios"><span>Mostrar servicios y precios</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>6. Después de crearla, el mantenimiento cuesta 19,90 €/mes sin permanencia. ¿Te encaja?</legend>
+          <div class="chips">
+            <label><input type="radio" name="encaje_precio" value="si" required><span>Sí</span></label>
+            <label><input type="radio" name="encaje_precio" value="dudas"><span>Tengo dudas</span></label>
+            <label><input type="radio" name="encaje_precio" value="no"><span>No</span></label>
+          </div>
+          <p class="note" data-note-no hidden>Gracias por decirlo claro. Esta promoción incluye el mantenimiento mensual, así que quizá no sea para ti ahora. Si envías el formulario, te escribimos con otras opciones.</p>
+        </fieldset>
+
+        <div class="field two">
+          <div>
+            <label for="nombre">7. Tu nombre</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="given-name" required>
+          </div>
+          <div>
+            <label for="contacto">WhatsApp o email</label>
+            <input id="contacto" name="contacto" type="text" autocomplete="email" required>
+          </div>
+        </div>
+
+        <label class="consent">
+          <input type="checkbox" name="acepto" required>
+          <span>Acepto las <a href="#condiciones">condiciones de la promoción</a> y la <a href="privacidad.html">política de privacidad</a>.</span>
+        </label>
+
+        <!-- Campo trampa anti-spam: invisible para personas; los bots suelen rellenarlo -->
+        <input class="hp" type="text" name="web_url" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <p class="error" data-error hidden>Revisa los campos marcados.</p>
+        <button class="btn btn-block" type="submit">Enviar solicitud</button>
+      </form>
+
+      <div class="done" data-done hidden>
+        <h3>Recibido.</h3>
+        <p>Te escribimos por DM en menos de 24 h. Quedan <b data-seats-left>5</b> plazas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Condiciones -->
+  <section class="terms" id="condiciones">
+    <div class="wrap narrow">
+      <h2>Condiciones</h2>
+      <ol>
+        <li><b>Plazas.</b> 5 landing pages para pequeños negocios, elegidas por Collins (no se sortean).</li>
+        <li><b>Sorteo de una 6ª landing, solo si se cubren las 5 plazas.</b> Si las 5 plazas se cubren antes del lunes 5 de octubre de 2026 a las 23:59, sorteamos una landing más entre los negocios nominados por DM con la palabra NOMINO (una participación por negocio; los 5 seleccionados no participan). Si no se cubren, no hay sorteo. El sorteo es aleatorio, se hace el martes 6 de octubre y se graba en stories. Premio: creación de la landing a 0 € y 3 meses de mantenimiento gratis; después, 19,90 €/mes si el negocio quiere continuar (si no, la web se despublica). Participar es gratis y no obliga a comprar nada.</li>
+        <li><b>Plazo.</b> Solicitudes hasta el lunes 5 de octubre de 2026 a las 23:59 (hora peninsular). La promoción puede cerrarse antes si se cubren las plazas.</li>
+        <li><b>Selección.</b> Elegimos los negocios según su encaje con la promoción (necesidad real de web, contenido visual disponible y variedad de sectores). Enviar la solicitud no garantiza una plaza.</li>
+        <li><b>Qué incluye (0 €).</b> Portada, presentación del negocio, servicios, formulario de contacto, diseño adaptado a tu identidad visual y publicación online en un subdominio de la plataforma (por ejemplo, tunegocio.vercel.app). Incluye una ronda de ajustes antes de publicar.</li>
+        <li><b>Cuota mensual.</b> 19,90 €/mes por hosting, mantenimiento y soporte básico (cambios pequeños de texto o imágenes). Das tu tarjeta al aceptar la plaza y el primer cobro se hace el día que se publica la web. Después se cobra automáticamente cada mes.</li>
+        <li><b>Sin permanencia.</b> Puedes darte de baja cuando quieras desde el enlace de gestión de tu suscripción. La web se despublica al final del periodo que ya has pagado.</li>
+        <li><b>Quedarte con la web al darte de baja (opcional).</b> Te entregamos los archivos o la migramos a tu hosting por un pago único según los meses de suscripción: 299 € (0–3 meses), 249 € (4–6), 199 € (7–12) o 99 € (más de 12).</li>
+        <li><b>No incluye.</b> Dominio personalizado (por ejemplo, tunegocio.es), páginas adicionales, reservas online, tienda, blog, multidioma, redacción de textos largos ni fotografía. Todo ello se presupuesta aparte.</li>
+        <li><b>Contenido.</b> Tú aportas los textos base, el logo y las fotos. Collins puede mostrar la landing en su portfolio y en redes.</li>
+        <li><b>Testimonio.</b> A cambio de la creación a 0 €, te comprometes a dar tu valoración honesta (texto o vídeo corto) 30 días después de la publicación.</li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span>Collins · Webs para pequeños negocios</span>
+    <span><a href="privacidad.html">Privacidad</a></span>
+  </div>
+</footer>
+
+<script src="landing0.js"></script>
+</body>
+</html>
