@@ -5,7 +5,7 @@ const PLAZAS_LIBRES = 5;
 
 // Pega aquí la URL /exec de la aplicación web de Google Apps Script (ver GOOGLE-SHEETS.md).
 // Si está vacía, el formulario solo muestra el mensaje de confirmación y registra los datos en la consola.
-const FORM_ENDPOINT = "";
+const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxtxfQmkszOVfZ8bN22i3CisYsdQZBjsY6lo3YMhWa8foCaUeKjGDEOxN64nsCoGd1k/exec";
 
 document.querySelectorAll("[data-seats-left]").forEach((el) => (el.textContent = PLAZAS_LIBRES));
 
