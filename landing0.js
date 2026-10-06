@@ -1,4 +1,4 @@
-// LANDING 0€ — contador de plazas + envío del formulario.
+// TU WEB GRATIS — contador de plazas + envío del formulario.
 
 // Actualiza este número cada vez que un negocio da su tarjeta en Stripe.
 const PLAZAS_LIBRES = 5;
@@ -7,9 +7,23 @@ const PLAZAS_LIBRES = 5;
 // Si está vacía, el formulario solo muestra el mensaje de confirmación y registra los datos en la consola.
 const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxtxfQmkszOVfZ8bN22i3CisYsdQZBjsY6lo3YMhWa8foCaUeKjGDEOxN64nsCoGd1k/exec";
 
+// La promoción terminó el 5 de octubre de 2026: oculta el formulario y muestra el aviso de cierre.
+const PROMO_CERRADA = true;
+
 document.querySelectorAll("[data-seats-left]").forEach((el) => (el.textContent = PLAZAS_LIBRES));
 
 const form = document.getElementById("form");
+
+if (PROMO_CERRADA) {
+  form.hidden = true;
+  form.previousElementSibling.hidden = true; // texto "7 preguntas, 2 minutos…"
+  document.querySelector("[data-closed]").hidden = false;
+  document.querySelector(".seats").hidden = true;
+  document.querySelector(".kicker").textContent = "Promoción cerrada";
+  document.querySelector(".hero-actions .btn").textContent = "Ver aviso";
+  document.querySelector("#solicitud h2").textContent = "Plazas cerradas";
+}
+
 const error = document.querySelector("[data-error]");
 const done = document.querySelector("[data-done]");
 const noteNo = document.querySelector("[data-note-no]");
@@ -81,7 +95,7 @@ form.addEventListener("submit", async (e) => {
         body: JSON.stringify(data),
       });
     } else {
-      console.info("Solicitud LANDING 0€ (sin FORM_ENDPOINT configurado):", data);
+      console.info("Solicitud TU WEB GRATIS (sin FORM_ENDPOINT configurado):", data);
     }
     form.hidden = true;
     done.hidden = false;
